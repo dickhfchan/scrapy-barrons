@@ -1,0 +1,6 @@
+Accept-Encoding: gzip,deflate
+Accept-Language: en
+User-Agent: Scrapy/1.5.1 (+https://scrapy.org)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Referer: https://www.barrons.com/topics/markets/113?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22113%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search
+Cookie: wsjregion=na%2Cus; usr_prof_v2=eyJpYyI6MH0%3D; usr_bkt=rGgki1wrhs

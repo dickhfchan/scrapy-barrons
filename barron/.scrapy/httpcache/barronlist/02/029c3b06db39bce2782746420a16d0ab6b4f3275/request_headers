@@ -1,0 +1,5 @@
+User-Agent: Scrapy/1.5.1 (+https://scrapy.org)
+Accept-Language: en
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate
+Referer: https://www.barrons.com/topics/markets?id=SB51883876072860043348504585208393507723852&type=article

@@ -1,0 +1,14 @@
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Content-Security-Policy: frame-ancestors *.dowjones.net *.onservo.com
+X-Powered-By: Express
+Cache-Control: public, max-age=30
+X-Frame-Options: SAMEORIGIN
+X-Amz-Cf-Pop: SIN5-C1
+X-Content-Type-Options: nosniff
+Server: CloudFront
+Date: Tue, 02 Jul 2019 09:45:41 GMT
+X-Cache: Miss from cloudfront
+Etag: W/"19fc-IvLSxIsCtcZSlGV7/JtNNUSMy2I"
+X-Amz-Cf-Id: UfZZMcVXO4eQBxGi8mc7cbijgctyJ7-0LjVf_ogMVK6DmCvsLwYaXA==
+Via: 1.1 f9a9e5a2fe899e7acf3e13d8d7a34642.cloudfront.net (CloudFront)

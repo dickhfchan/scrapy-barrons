@@ -1,0 +1,5 @@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate
+User-Agent: Scrapy/1.5.1 (+https://scrapy.org)
+Accept-Language: en
+Cookie: auth0env=; auth0=s%3Ay0dYEZO0vTQgCaTduSi9SvurFRKeG0wy.smEvOpGeAH93TVwFUU3Ix6mylITDVEPNAvz3wln7wHo; djcs_route=862c347f-5018-4273-a8a8-1f62c5adc270

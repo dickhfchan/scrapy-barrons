@@ -1,0 +1,19 @@
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Content-Encoding: gzip
+Content-Type: text/html; charset=UTF-8
+X-Info-Template: barrons_resp_article
+Content-Security-Policy: frame-ancestors *.dowjones.net *.barrons.com
+X-Article-Template: full
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Frame-Options: ALLOW-FROM http://dowjones.net
+X-Powered-By: Express
+X-Ua-Compatible: IE=edge
+Set-Cookie: wsjregion=na%2Cus; Domain=.barrons.com; Path=/; Expires=Thu, 01 Aug 2019 09:46:18 GMT
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Amz-Cf-Pop: SIN5-C1
+Date: Tue, 02 Jul 2019 09:46:19 GMT
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Id: HWwAaTOs2JW3bRWhRgqGnNhPt2usZty9CBrUF89jEwuYhYpKtR1WCA==
+Via: 1.1 aa0f507eb11fe6a0d0b6bc93ffd294fb.cloudfront.net (CloudFront)
