@@ -13,14 +13,16 @@ class BarronlistSpider(scrapy.Spider):
         'HTTPCACHE_ENABLED': True
             }
     allowed_domains = ['www.barrons.com']
-    urls = ['https://www.barrons.com/topics/technology/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search'.format(i,i) for i in range(100,220)]
-    start_urls = ['https://www.barrons.com/topics/markets/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search'.format(i,i) for i in range(100,200)] + urls
+    links = ['https://www.barrons.com/topics/markets?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search','https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search']
+    urls = ['https://www.barrons.com/topics/technology/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search'.format(i,i) for i in range(2,4)]
+    start_urls = ['https://www.barrons.com/topics/markets/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search'.format(i,i) for i in range(2,4)] + urls + links
     def parse(self, response):
         jsonresponse = json.loads(response.body_as_unicode())
         collection = jsonresponse['collection']
         art_ids = [x['id'] for x in collection]
         link = response.url
-        link_name = link.split('/')[4]
+        links = link.split('/',4)[4]
+        link_name = links.split('?')[0].split('/')[0] if '/' in links.split('?')[0] else links.split('?')[0]
         for art_id in art_ids:
             url = ('https://www.barrons.com/topics/{}?id={}&type=article'
                 .format(link_name,art_id))
@@ -37,6 +39,6 @@ class BarronlistSpider(scrapy.Spider):
         item['title'] = response.xpath("//meta[@name='article.headline']/@content").extract_first()
         item['subtitle'] = response.meta['subtitle']
         item['category'] = response.meta['link_name']
-        datetimes = response.xpath('//*[@id="article-contents"]/header/div[2]/time/text()').extract_first()
+        datetimes = response.css('time.timestamp::text').extract_first()
         item['date'] = ' '.join(datetimes.strip().split(' ')[1:4]) if datetimes.strip().split(' ')[0] == 'Updated' else ' '.join(datetimes.strip().split(' ')[:3])
         yield item
