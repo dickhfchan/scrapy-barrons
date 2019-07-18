@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/rw_barron/rw_art.py", line 8, in <module>
+    session = cluster.connect('scrapy')
+  File "/usr/lib/python3/dist-packages/cassandra/cluster.py", line 1180, in connect
+    self.control_connection.connect()
+  File "/usr/lib/python3/dist-packages/cassandra/cluster.py", line 2597, in connect
+    self._set_new_connection(self._reconnect_internal())
+  File "/usr/lib/python3/dist-packages/cassandra/cluster.py", line 2634, in _reconnect_internal
+    raise NoHostAvailable("Unable to connect to any servers", errors)
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'52.76.70.227': ConnectionRefusedError(111, "Tried connecting to [('52.76.70.227', 9042)]. Last error: Connection refused")})
