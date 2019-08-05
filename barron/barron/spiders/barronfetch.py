@@ -61,27 +61,27 @@ class BarronfetchSpider(scrapy.Spider):
     def parse_body(self,response):
 #        inspect_response(response, self)
         item = BarronItem()
-        # Get url and store it in output.csv file through pipeline file
+        # Get url and store it in articles.csv file through pipeline file
         item['url'] = response.url
-        # Get title and store it in output.csv file through pipeline file
+        # Get title and store it in articles.csv file through pipeline file
         item['title'] = response.xpath("//meta[@name='article.headline']/@content").extract_first()
-        # Get subtitle and store it in output.csv file through pipeline file
+        # Get subtitle and store it in articles.csv file through pipeline file
         item['subtitle'] = response.meta['subtitle']
-        # Get category and store it in output.csv file through pipeline file
+        # Get category and store it in articles.csv file through pipeline file
         item['category'] = response.meta['category']
         datetimes = response.xpath('//*[@id="article-contents"]/header/div[2]/time/text()').extract_first()
-        # Get date and store it in output.csv file through pipeline file
+        # Get date and store it in articles.csv file through pipeline file
         item['date'] = ' '.join(datetimes.strip().split(' ')[1:4]) if datetimes.strip().split(' ')[0] == 'Updated' else ' '.join(datetimes.strip().split(' ')[:3])
         tag = response.xpath("//meta[@name='keywords']/@content").extract_first()
-        # Get tags and store it in output.csv file through pipeline file
+        # Get tags and store it in articles.csv file through pipeline file
         item['tags'] = tag
         bodys = response.xpath('//*[@id="js-article__body"]//p//text()').extract()
         b = ''.join(bodys)
-        # Get body and store it in output.csv file through pipeline file
+        # Get body and store it in articles.csv file through pipeline file
         re_h =re.compile(r'\s+')
         item['body'] = re_h.sub(' ',b).replace('\ufeff',' ')
         tags = tag if tag else 'nan'
         tagss = tags.split(',')[0].islower()
-        # Get company and store it in output.csv file through pipeline file
+        # Get company and store it in articles.csv file through pipeline file
         item['company'] = 'nan' if tagss else tag.split(',')[0]
         yield item
