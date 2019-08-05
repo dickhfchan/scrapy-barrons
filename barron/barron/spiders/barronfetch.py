@@ -27,44 +27,61 @@ class BarronfetchSpider(scrapy.Spider):
             }
     start_urls = ['https://www.barrons.com/']
     def parse(self, response):
+        # Setting Firefox Headless Driver
         options = webdriver.FirefoxOptions()
         options.add_argument('-headless')
         driver = webdriver.Firefox(firefox_options=options)
+        # Accessing Barrons login page with access browser
         driver.get('https://accounts.barrons.com/login?opts=0&target=https%3A%2F%2Fwww.barrons.com%2F')
+        # Location username
         inputemail = driver.find_element_by_name("username")
+        # Location password
         inputpwd = driver.find_element_by_name('password')
+        # input username
         inputemail.send_keys("jameswong1974cc@gmail.com")
+        # input password
         inputpwd.send_keys('531720cc')
+        # submit username and password
         inputpwd.submit()
         try:
             WebDriverWait(driver, 60).until(EC.title_contains("Verify your Email Address"))
         finally:
+            # get cookie
             cookie = driver.get_cookies()
             print(cookie,'+++++++++++++++++++++++++++++++++')
             driver.quit()
+            # Put the data to crawl into the data list
             data = pd.read_csv('output.csv', sep='~')
             for i in range(len(data)):
                 link = data.url[i] + '?mod=hp_LEAD_1'
                 category = data.category[i]
                 subtitle = data.subtitle[i]
+                # Bring cookies to the page you want to crawl
                 yield scrapy.Request(url = link,callback = self.parse_body,cookies=cookie,headers=BarronfetchSpider.header,meta = {'subtitle':subtitle,'category':category})
     def parse_body(self,response):
 #        inspect_response(response, self)
         item = BarronItem()
+        # Get url and store it in output.csv file through pipeline file
         item['url'] = response.url
+        # Get title and store it in output.csv file through pipeline file
         item['title'] = response.xpath("//meta[@name='article.headline']/@content").extract_first()
+        # Get subtitle and store it in output.csv file through pipeline file
         item['subtitle'] = response.meta['subtitle']
+        # Get category and store it in output.csv file through pipeline file
         item['category'] = response.meta['category']
         datetimes = response.xpath('//*[@id="article-contents"]/header/div[2]/time/text()').extract_first()
+        # Get date and store it in output.csv file through pipeline file
         item['date'] = ' '.join(datetimes.strip().split(' ')[1:4]) if datetimes.strip().split(' ')[0] == 'Updated' else ' '.join(datetimes.strip().split(' ')[:3])
         tag = response.xpath("//meta[@name='keywords']/@content").extract_first()
+        # Get tags and store it in output.csv file through pipeline file
         item['tags'] = tag
         bodys = response.xpath('//*[@id="js-article__body"]//p//text()').extract()
         b = ''.join(bodys)
-        item['body'] = b
+        # Get body and store it in output.csv file through pipeline file
         re_h =re.compile(r'\s+')
         item['body'] = re_h.sub(' ',b).replace('\ufeff',' ')
         tags = tag if tag else 'nan'
         tagss = tags.split(',')[0].islower()
+        # Get company and store it in output.csv file through pipeline file
         item['company'] = 'nan' if tagss else tag.split(',')[0]
         yield item
