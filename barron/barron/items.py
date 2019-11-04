@@ -18,3 +18,4 @@ class BarronItem(scrapy.Item):
     body = scrapy.Field()
     category = scrapy.Field()
     company = scrapy.Field()
+    year = scrapy.Field()

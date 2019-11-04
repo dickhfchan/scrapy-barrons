@@ -33,3 +33,146 @@ JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLe
 JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2532918146&moatClientLevel3=5086825131&moatClientLevel4=138272738525&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 223: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 1562060947560	Marionette	INFO	Stopped listening on port 38796
+1572857888463	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BiMGc3KO0z56"
+*** You are running in headless mode.
+1572857889742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572857889743	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572857889743	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572857889743	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1572857892407	Marionette	INFO	Listening on port 44189
+1572857892478	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:11196): dconf-WARNING **: 08:58:16.350: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+
+(/usr/lib/firefox/firefox:11196): dconf-CRITICAL **: 08:58:16.351: unable to create directory '/run/user/1000/dconf': Permission denied.  dconf will not work properly.
+
+(/usr/lib/firefox/firefox:11196): dconf-CRITICAL **: 08:58:16.351: unable to create directory '/run/user/1000/dconf': Permission denied.  dconf will not work properly.
+
+(/usr/lib/firefox/firefox:11196): dconf-CRITICAL **: 08:58:16.357: unable to create directory '/run/user/1000/dconf': Permission denied.  dconf will not work properly.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276639280&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1572857956741	Marionette	INFO	Stopped listening on port 44189
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x640027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x37011E,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xAB0006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 683))
+1572858229476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dPQLlDzF8keU"
+*** You are running in headless mode.
+1572858229934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572858229934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572858229934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572858229934	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1572858232208	Marionette	INFO	Listening on port 41847
+1572858232288	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:11712): dconf-WARNING **: 09:03:58.891: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=4918024066&moatClientLevel4=138276345992&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1572858298891	Marionette	INFO	Stopped listening on port 41847
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xAB0006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 683))
+1572858444834	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xSDf2szXMakW"
+*** You are running in headless mode.
+1572858445329	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572858445329	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572858445330	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572858445330	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1572858447589	Marionette	INFO	Listening on port 45723
+1572858447642	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12153): dconf-WARNING **: 09:07:31.227: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5137560415&moatClientLevel4=138293252434&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1572858511270	Marionette	INFO	Stopped listening on port 45723
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 683))
+1572858701363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zTcmWimsoLz5"
+*** You are running in headless mode.
+1572858701831	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572858701831	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572858701832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572858701832	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1572858704142	Marionette	INFO	Listening on port 44801
+1572858704187	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12517): dconf-WARNING **: 09:11:48.495: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://z.moatads.com/dowjones8650224/moatad.js#moatClientLevel1=21603626&moatClientLevel2=2183306066&moatClientLevel3=5145135737&moatClientLevel4=138287314338&moatClientSlicer1=50396786&moatClientSlicer2=305529746&refresh=1, line 237: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+JavaScript warning: https://static.adsafeprotected.com/sca.17.4.95.js, line 32: Array.slice is deprecated; use Array.prototype.slice instead
+1572858768862	Marionette	INFO	Stopped listening on port 44801
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+1572858892581	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sNdd3D371NEQ"
+*** You are running in headless mode.
+1572858893448	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572858893449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572858893449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572858893449	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1572858896023	Marionette	INFO	Listening on port 42153
+1572858896127	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13036): dconf-WARNING **: 09:15:01.251: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1572859186042	Marionette	INFO	Stopped listening on port 42153
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
