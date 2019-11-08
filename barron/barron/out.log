@@ -1,0 +1,869 @@
+2019-11-08 00:30:02 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: barron)
+2019-11-08 00:30:02 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.8 (default, Oct  7 2019, 12:59:55) - [GCC 8.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Linux-4.15.0-1052-aws-x86_64-with-Ubuntu-18.04-bionic
+2019-11-08 00:30:02 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_MAX_DELAY': 300, 'AUTOTHROTTLE_START_DELAY': 10, 'BOT_NAME': 'barron', 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 302], 'NEWSPIDER_MODULE': 'barron.spiders', 'SPIDER_MODULES': ['barron.spiders']}
+2019-11-08 00:30:02 [scrapy.extensions.telnet] INFO: Telnet Password: 2163fb91e3dc0be0
+2019-11-08 00:30:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-11-08 00:30:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-11-08 00:30:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-11-08 00:30:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['barron.pipelines.BarronPipeline']
+2019-11-08 00:30:02 [scrapy.core.engine] INFO: Spider opened
+2019-11-08 00:30:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-11-08 00:30:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-11-08 00:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:21 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653322232736324&type=article> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-11-08 00:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search> (referer: None)
+2019-11-08 00:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001760036606474&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653322232736324&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001783233038522&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002180871766692&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002262925025554&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002010396119564&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002280613551572&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002131405951212&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002203254041210&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003692716321986&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003801960711180&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003772808648828&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003342782794696&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000122283692438&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904585655280859001388&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655163286540060&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653090870146522&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/cisco-systems-stock-options-put-call-51572902154> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653322232736324&type=article)
+2019-11-08 00:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/amd-stock-chip-maker-market-share-51573061933> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001760036606474&type=article)
+2019-11-08 00:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/cisco-systems-stock-options-put-call-51572902154>
+{'category': 'technology',
+ 'date': 'November 6, 2019',
+ 'subtitle': 'Investors are preparing for somber news, confirmation that '
+             'economic growth is slowing.',
+ 'title': 'Cisco Systems Stock Could Spike, or Plunge, After Earnings. How to '
+          'Win Either Way. ',
+ 'url': 'https://www.barrons.com/articles/cisco-systems-stock-options-put-call-51572902154'}
+2019-11-08 00:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/amd-stock-chip-maker-market-share-51573061933>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Its stock has risen more than 90% year to date as investors have '
+             'grown increasingly optimistic about the company’s product '
+             'lineup.',
+ 'title': 'AMD Gains Chip Market Share in Nearly Every Category',
+ 'url': 'https://www.barrons.com/articles/amd-stock-chip-maker-market-share-51573061933'}
+2019-11-08 00:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/iacs-profits-match-estimates-distribution-revenue-stock-51573074206> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001783233038522&type=article)
+2019-11-08 00:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/iacs-profits-match-estimates-distribution-revenue-stock-51573074206>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'IAC CEO Joey Levin said a board committee continues to review a '
+             'proposal to distribute the internet company’s 80.8% stock in '
+             'Match to shareholders.',
+ 'title': 'IAC’s Profits Topped Estimates. Holders Await Distribution of Match '
+          'Stock.',
+ 'url': 'https://www.barrons.com/articles/iacs-profits-match-estimates-distribution-revenue-stock-51573074206'}
+2019-11-08 00:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/qualcomm-stock-is-rising-on-better-than-expected-earnings-51573075500> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002180871766692&type=article)
+2019-11-08 00:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/qualcomm-stock-is-rising-on-better-than-expected-earnings-51573075500>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The chip maker’s predictions for the current quarter bracketed '
+             'Wall Street’s expectations.',
+ 'title': 'Qualcomm Stock Is Rising on Better-Than-Expected Earnings',
+ 'url': 'https://www.barrons.com/articles/qualcomm-stock-is-rising-on-better-than-expected-earnings-51573075500'}
+2019-11-08 00:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/hp-inc-confirms-xerox-made-proposal-on-potential-combination-51573080177> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002262925025554&type=article)
+2019-11-08 00:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/hp-inc-confirms-xerox-made-proposal-on-potential-combination-51573080177>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'HP also said it has had discussions about a possible transaction '
+             'with Xerox in the past.',
+ 'title': 'HP Confirms Xerox Proposed a Deal. Why That ‘Makes Sense.’',
+ 'url': 'https://www.barrons.com/articles/hp-inc-confirms-xerox-made-proposal-on-potential-combination-51573080177'}
+2019-11-08 00:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/sonos-could-be-the-next-hardware-acquisition-after-fitbit-says-analyst-51573080319> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002010396119564&type=article)
+2019-11-08 00:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/sonos-could-be-the-next-hardware-acquisition-after-fitbit-says-analyst-51573080319>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'One tech giant makes most sense as buyer, says analyst',
+ 'title': 'Sonos Could Be the Next Hardware Acquisition After Fitbit, Says '
+          'Analyst',
+ 'url': 'https://www.barrons.com/articles/sonos-could-be-the-next-hardware-acquisition-after-fitbit-says-analyst-51573080319'}
+2019-11-08 00:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/china-baidu-earnings-stock-51573082068> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002280613551572&type=article)
+2019-11-08 00:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/china-baidu-earnings-stock-51573082068>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': "The company's third-quarter results helped restore some "
+             'confidence in the stock.',
+ 'title': 'China’s Baidu Is Recovering Better Than Expected, and the Stock is '
+          'Rising ',
+ 'url': 'https://www.barrons.com/articles/china-baidu-earnings-stock-51573082068'}
+2019-11-08 00:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/sonos-stock-apple-amazon-connected-home-51573074414> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002131405951212&type=article)
+2019-11-08 00:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/sonos-stock-apple-amazon-connected-home-51573074414>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'D.A. Davidson analyst Tom Forte said Sonos would be “natural '
+             'acquisition target for Apple,” strengthening the company’s '
+             'offering in the connected home.',
+ 'title': 'Sonos Stock Rallies on Speculation of Potential Apple or Amazon Bid',
+ 'url': 'https://www.barrons.com/articles/sonos-stock-apple-amazon-connected-home-51573074414'}
+2019-11-08 00:30:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/roku-stock-earnings-report-beats-expectations-51573076750> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586002203254041210&type=article)
+2019-11-08 00:30:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/roku-stock-earnings-report-beats-expectations-51573076750>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Roku reported an adjusted third-quarter loss of 22 cents a '
+             'share, better than the loss of 28 cents that Wall Street '
+             'expected.',
+ 'title': 'Roku Beat Expectations, but the Stock Is Plunging Anyway',
+ 'url': 'https://www.barrons.com/articles/roku-stock-earnings-report-beats-expectations-51573076750'}
+2019-11-08 00:30:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/roku-stock-earnings-buy-it-now-51573142857> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003692716321986&type=article)
+2019-11-08 00:30:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/roku-stock-earnings-buy-it-now-51573142857>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': "The company's “secular story” is still intact, Rosenblatt "
+             'Securities says.',
+ 'title': 'Roku Stock Is Diving After Earnings. Analysts Say It’s Time to Buy.',
+ 'url': 'https://www.barrons.com/articles/roku-stock-earnings-buy-it-now-51573142857'}
+2019-11-08 00:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/xerox-may-be-trying-to-goad-hp-into-buying-xerox-analyst-says-51573146467> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003801960711180&type=article)
+2019-11-08 00:30:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/xerox-may-be-trying-to-goad-hp-into-buying-xerox-analyst-says-51573146467>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Bernstein’s Toni Sacconaghi says Xerox may be trying to goad HP '
+             'Into Buying Xerox—which would make “a lot more financial sense.”',
+ 'title': 'Xerox’s Bid for HP Is $22 a Share, According to Reports  ',
+ 'url': 'https://www.barrons.com/articles/xerox-may-be-trying-to-goad-hp-into-buying-xerox-analyst-says-51573146467'}
+2019-11-08 00:30:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/buy-qualcomm-stock-5g-51573149404> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003772808648828&type=article)
+2019-11-08 00:30:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/buy-qualcomm-stock-5g-51573149404>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'The company “is well positioned to benefit with 5G network '
+             'builds ramping around the world,” Canaccord Genuity says.',
+ 'title': 'Buy Qualcomm Stock Because Analysts Say It’s a Winner for the 5G '
+          'World',
+ 'url': 'https://www.barrons.com/articles/buy-qualcomm-stock-5g-51573149404'}
+2019-11-08 00:30:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/dow-industrials-set-for-triple-digit-gain-after-positive-trade-news-51573128821> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003342782794696&type=article)
+2019-11-08 00:30:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/dow-industrials-set-for-triple-digit-gain-after-positive-trade-news-51573128821>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'An upbeat day is building for Wall Street, after a report that '
+             'the U.S. and China have agreed to cancel some trade tariffs in '
+             'stages.',
+ 'title': 'U.S. Stocks Set to Soar After Report China And the U.S. Will Cancel '
+          'Each Other’s Trade Tariffs In Stages',
+ 'url': 'https://www.barrons.com/articles/dow-industrials-set-for-triple-digit-gain-after-positive-trade-news-51573128821'}
+2019-11-08 00:30:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/emerging-markets-are-where-the-real-bargains-are-strategist-says-51573043401> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000122283692438&type=article)
+2019-11-08 00:30:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/emerging-markets-are-where-the-real-bargains-are-strategist-says-51573043401>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Valuations look elevated in the U.S., says Invesco’s Kristina '
+             'Hooper. But emerging markets remain both cheap and attractive, '
+             'and should benefit from looser monetary conditions and capital '
+             'flows arising from the Fed’s rate cuts.',
+ 'title': 'U.S. Stocks Still Have Room to Run. But the Real Bargains Might Be '
+          'in Emerging Markets.',
+ 'url': 'https://www.barrons.com/articles/emerging-markets-are-where-the-real-bargains-are-strategist-says-51573043401'}
+2019-11-08 00:30:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/saudi-aramco-ipo-oil-stocks-51573005119> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904585655280859001388&type=article)
+2019-11-08 00:30:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/saudi-aramco-ipo-oil-stocks-51573005119>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'When the world’s largest oil producer goes public, it will '
+             'surely mean a new dynamic for all the players in the oil '
+             'industry.',
+ 'title': 'How the Saudi Aramco IPO Will Affect Other Oil Stocks',
+ 'url': 'https://www.barrons.com/articles/saudi-aramco-ipo-oil-stocks-51573005119'}
+2019-11-08 00:30:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/apple-tv-reviews-streaming-stock-51572981763> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655163286540060&type=article)
+2019-11-08 00:30:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/apple-tv-reviews-streaming-stock-51572981763>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'Deutsche Bank analyst Jereiel Ong says it is too soon to '
+             'forecast how many customers the streaming service may attract.',
+ 'title': 'Apple TV+ Is Getting So-So Reviews. It Could Still Help the Stock.',
+ 'url': 'https://www.barrons.com/articles/apple-tv-reviews-streaming-stock-51572981763'}
+2019-11-08 00:30:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/apple-pledges-billions-affordable-housing-in-california-51572887916> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653090870146522&type=article)
+2019-11-08 00:30:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/apple-pledges-billions-affordable-housing-in-california-51572887916>
+{'category': 'technology',
+ 'date': 'Nov. 4, 2019',
+ 'subtitle': 'The tech giant became the latest to make a major financial '
+             'commitment to address the shortage of affordable housing in '
+             'California.',
+ 'title': 'Apple Pledges $2.5 Billion to Build Affordable Housing In '
+          'California',
+ 'url': 'https://www.barrons.com/articles/apple-pledges-billions-affordable-housing-in-california-51572887916'}
+2019-11-08 00:30:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653570828633344&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653570079873794&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653481479457358&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653091914892912&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51374885032496333355704585631161999160510&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB52435233077418933703004585645882708558648&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653753973465626&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585654972281175954&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655103749669936&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655073375368714&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653310023909080&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655200939279176&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655291640669332&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655312504693460&type=article> (referer: https://www.barrons.com/topics/technology/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000193385505386&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000031561923692&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000061880257244&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:30:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/adobe-stock-2020-guidance-51572904783> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653570828633344&type=article)
+2019-11-08 00:30:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/adobe-stock-2020-guidance-51572904783>
+{'category': 'technology',
+ 'date': 'Nov. 4, 2019',
+ 'subtitle': 'The company provided guidance for its fiscal 2020 of $13.15 '
+             'billion in sales and $9.75 of adjusted earnings per share, '
+             'compared with the Wall Street average analyst estimates of '
+             '$13.14 billion and $9.70, respectively.',
+ 'title': 'Adobe Stock Is Rising on Better-Than-Expected Guidance',
+ 'url': 'https://www.barrons.com/articles/adobe-stock-2020-guidance-51572904783'}
+2019-11-08 00:30:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/ringcentral-stock-earnings-guidance-cloud-services-51572905613> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653570079873794&type=article)
+2019-11-08 00:30:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/ringcentral-stock-earnings-guidance-cloud-services-51572905613>
+{'category': 'technology',
+ 'date': 'Nov. 4, 2019',
+ 'subtitle': 'The provider of cloud-based communications services posted '
+             'revenue of $233 million, up 34%, and ahead of Wall Street '
+             'consensus at $221.3 million.',
+ 'title': 'RingCentral Stock Is Climbing After Earnings and Guidance Top '
+          'Expectations',
+ 'url': 'https://www.barrons.com/articles/ringcentral-stock-earnings-guidance-cloud-services-51572905613'}
+2019-11-08 00:30:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/uber-third-quarter-results-better-than-expected-51572905802> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653481479457358&type=article)
+2019-11-08 00:30:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/uber-third-quarter-results-better-than-expected-51572905802>
+{'category': 'technology',
+ 'date': 'Nov. 4, 2019',
+ 'subtitle': 'The ride-sharing company beat revenue expectations and reported '
+             'a smaller-than-expected loss.',
+ 'title': 'Uber Stock Falls Even Though Results Beat Estimates',
+ 'url': 'https://www.barrons.com/articles/uber-third-quarter-results-better-than-expected-51572905802'}
+2019-11-08 00:30:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/qualcomm-reports-earnings-tomorrow-heres-what-to-expect-51572949800> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653091914892912&type=article)
+2019-11-08 00:30:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/qualcomm-reports-earnings-tomorrow-heres-what-to-expect-51572949800>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'Wall Street analysts are predicting that the company will report '
+             'fiscal fourth-quarter adjusted earnings of $0.71 per share and '
+             '$4.75 billion of revenue.',
+ 'title': 'Qualcomm Reports Earnings Tomorrow. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/qualcomm-reports-earnings-tomorrow-heres-what-to-expect-51572949800'}
+2019-11-08 00:30:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655250104496016&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/you-want-a-piece-of-that-hot-pre-ipo-its-getting-easier-51572953400> (referer: https://www.barrons.com/topics/technology?id=SB52435233077418933703004585645882708558648&type=article)
+2019-11-08 00:31:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/you-want-a-piece-of-that-hot-pre-ipo-its-getting-easier-51572953400>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'Forge CEO Kelly Rodriques discusses the growing secondary market '
+             'in pre-IPO shares. While the initial offering market has slowed '
+             'down, interest in fast-growing stocks continues unabated.',
+ 'title': 'You Want a Piece of That Hot Pre-IPO? It’s Getting Easier.',
+ 'url': 'https://www.barrons.com/articles/you-want-a-piece-of-that-hot-pre-ipo-its-getting-easier-51572953400'}
+2019-11-08 00:31:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/groupon-stock-drops-as-earnings-revenue-disappoint-51572959583> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653753973465626&type=article)
+2019-11-08 00:31:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/groupon-stock-drops-as-earnings-revenue-disappoint-51572959583>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The online marketplace company reported weaker-than-expected '
+             'quarterly results after the close of trading on Monday.',
+ 'title': 'Groupon Stock Is Dropping as Revenue Falls and Traffic Declines',
+ 'url': 'https://www.barrons.com/articles/groupon-stock-drops-as-earnings-revenue-disappoint-51572959583'}
+2019-11-08 00:31:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/shake-shack-stock-earnings-sales-outlook-51572965895> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585654972281175954&type=article)
+2019-11-08 00:31:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/shake-shack-stock-earnings-sales-outlook-51572965895>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The burger chain reported higher quarterly earnings than Wall '
+             'Street expected, but same-store sales growth was lower than '
+             'expected.',
+ 'title': 'Shake Shack Stock Is Plunging After Disappointing Sales Outlook',
+ 'url': 'https://www.barrons.com/articles/shake-shack-stock-earnings-sales-outlook-51572965895'}
+2019-11-08 00:31:02 [scrapy.extensions.logstats] INFO: Crawled 65 pages (at 65 pages/min), scraped 24 items (at 24 items/min)
+2019-11-08 00:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/nvidia-stock-next-generation-computing-analyst-51572973547> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655073375368714&type=article)
+2019-11-08 00:31:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/netflix-stock-slips-on-fears-it-will-miss-subscriber-growth-guidance-51572973080> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655103749669936&type=article)
+2019-11-08 00:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/nvidia-stock-next-generation-computing-analyst-51572973547>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'Rosenblatt Securities is getting more bullish on Nvidia stock, '
+             'predicting solid demand for its graphic chips in the coming '
+             'quarters.',
+ 'title': 'Nvidia Is in the ‘Pole Position’ for Next-Generation Computing, '
+          'Analyst Says',
+ 'url': 'https://www.barrons.com/articles/nvidia-stock-next-generation-computing-analyst-51572973547'}
+2019-11-08 00:31:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/netflix-stock-slips-on-fears-it-will-miss-subscriber-growth-guidance-51572973080>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The streaming-video giant’s stock is down about 25%—almost $100 '
+             'a share—since early June. A large chunk of the slide reflects '
+             'the company’s disappointing second-quarter subscriber growth.',
+ 'title': 'Netflix Stock Slips on Fears It Will Miss Subscriber Growth '
+          'Guidance',
+ 'url': 'https://www.barrons.com/articles/netflix-stock-slips-on-fears-it-will-miss-subscriber-growth-guidance-51572973080'}
+2019-11-08 00:31:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/beyond-meat-stock-short-selling-bears-51572913845> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585653310023909080&type=article)
+2019-11-08 00:31:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/beyond-meat-stock-short-selling-bears-51572913845>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The alternative meat stock is no longer one of short sellers’ '
+             'favorite stocks to bet against—at least according to the '
+             'numbers.',
+ 'title': 'Investors Still Love Betting Against Beyond Meat Stock. Don’t Let '
+          'the Numbers Fool You. ',
+ 'url': 'https://www.barrons.com/articles/beyond-meat-stock-short-selling-bears-51572913845'}
+2019-11-08 00:31:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/microsoft-stock-is-at-a-turning-point-over-cloud-competitor-amazon-51572980717> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655200939279176&type=article)
+2019-11-08 00:31:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/microsoft-stock-is-at-a-turning-point-over-cloud-competitor-amazon-51572980717>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The software giant bested Amazon.com in a key cloud contract '
+             'competition. That has Wedbush energized about Microsoft stock.',
+ 'title': 'Microsoft’s Cloud Win Over Amazon Is a ‘Turning Point,’ Analyst '
+          'Says',
+ 'url': 'https://www.barrons.com/articles/microsoft-stock-is-at-a-turning-point-over-cloud-competitor-amazon-51572980717'}
+2019-11-08 00:31:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/symantec-broadcom-cybersecurity-nortonlifelock-deal-51572984849> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655291640669332&type=article)
+2019-11-08 00:31:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/symantec-broadcom-cybersecurity-nortonlifelock-deal-51572984849>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'Broadcom acquired the former Symantec’s enterprise business in a '
+             'deal that closed on Monday. The remaining, consumer-focused '
+             'cybersecurity operation is a Buy, according to UBS.',
+ 'title': 'Symantec Is Now NortonLifeLock. It’s a Cheap, Ignored Stock.',
+ 'url': 'https://www.barrons.com/articles/symantec-broadcom-cybersecurity-nortonlifelock-deal-51572984849'}
+2019-11-08 00:31:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/peloton-ceo-fitness-company-profitable-losses-revenue-earnings-bikes-51572986679> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655312504693460&type=article)
+2019-11-08 00:31:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/peloton-ceo-fitness-company-profitable-losses-revenue-earnings-bikes-51572986679>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The stock fell on Tuesday even though the fitness company '
+             'reported higher quarterly sales than expected.',
+ 'title': 'Peloton CEO Says ‘We Could Pull Back on Growth and Be Profitable '
+          'Tomorrow’',
+ 'url': 'https://www.barrons.com/articles/peloton-ceo-fitness-company-profitable-losses-revenue-earnings-bikes-51572986679'}
+2019-11-08 00:31:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/match-group-stock-tumbles-on-weak-outlook-dragging-down-iac-51572990922> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000193385505386&type=article)
+2019-11-08 00:31:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/match-group-stock-tumbles-on-weak-outlook-dragging-down-iac-51572990922>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'For the fourth quarter, the online dating company projects '
+             'revenue of $545 million to $555 million, below the Street '
+             'consensus at $559.3 million.',
+ 'title': 'Match Group Stock Tumbles on Weak Outlook, Dragging Down IAC',
+ 'url': 'https://www.barrons.com/articles/match-group-stock-tumbles-on-weak-outlook-dragging-down-iac-51572990922'}
+2019-11-08 00:31:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/take-two-reports-earnings-tomorrow-heres-what-to-expect-51573035300> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000031561923692&type=article)
+2019-11-08 00:31:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/take-two-reports-earnings-tomorrow-heres-what-to-expect-51573035300>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Wall Street analysts estimate that the company will report '
+             'fiscal second-quarter adjusted earnings of $1.70 per share and '
+             '$926 million of revenue.',
+ 'title': 'Take-Two Reports Earnings Tomorrow. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/take-two-reports-earnings-tomorrow-heres-what-to-expect-51573035300'}
+2019-11-08 00:31:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/activision-blizzard-earnings-are-coming-heres-what-to-expect-51573041603> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000061880257244&type=article)
+2019-11-08 00:31:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/activision-blizzard-earnings-are-coming-heres-what-to-expect-51573041603>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Call of Duty: Modern Warfare set record sales last week, while '
+             'Call of Duty: Mobile seems to be off to a strong start.',
+ 'title': 'Activision Blizzard Earnings Are Coming. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/activision-blizzard-earnings-are-coming-heres-what-to-expect-51573041603'}
+2019-11-08 00:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/baidu-earnings-tomorrow-online-advertising-e-commerce-51572901010> (referer: https://www.barrons.com/topics/technology?id=SB51374885032496333355704585631161999160510&type=article)
+2019-11-08 00:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/baidu-earnings-tomorrow-online-advertising-e-commerce-51572901010>
+{'category': 'technology',
+ 'date': 'Nov. 5, 2019',
+ 'subtitle': 'The company is investing heavily in new, high-tech-driven '
+             'businesses such as artificial intelligence, cloud '
+             'infrastructure, and autonomous driving.',
+ 'title': 'Baidu Reports Earnings Tomorrow. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/baidu-earnings-tomorrow-online-advertising-e-commerce-51572901010'}
+2019-11-08 00:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000233292598872&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655293242879822&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904585654862558338550&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/teradyne-semiconductor-test-equipment-robots-robotics-industrial-automation-51572991549> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655250104496016&type=article)
+2019-11-08 00:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000901475792280&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/teradyne-semiconductor-test-equipment-robots-robotics-industrial-automation-51572991549>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The semiconductor test-equipment maker is getting big in '
+             'robotics. CEO Mark Jagiela explains why.',
+ 'title': 'How Chip-Test Maker Teradyne Is Becoming a Robot Powerhouse',
+ 'url': 'https://www.barrons.com/articles/teradyne-semiconductor-test-equipment-robots-robotics-industrial-automation-51572991549'}
+2019-11-08 00:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001602811851010&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001701686745780&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001672151202108&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001760270853824&type=article> (referer: https://www.barrons.com/topics/technology/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:31:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001381315570542&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001380130398392&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904585655250104496016&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000233292598872&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001492857505186&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000101449813260&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001552286284990&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000240362381336&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/plantronics-stock-plunges-on-weak-earnings-soft-outlook-51572997336> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000233292598872&type=article)
+2019-11-08 00:31:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/plantronics-stock-plunges-on-weak-earnings-soft-outlook-51572997336>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Plantronics shares have lost more than a quarter of their value '
+             'in late trading Tuesday.',
+ 'title': 'Plantronics Stock Is Plunging on Weak Earnings and a Soft Outlook',
+ 'url': 'https://www.barrons.com/articles/plantronics-stock-plunges-on-weak-earnings-soft-outlook-51572997336'}
+2019-11-08 00:31:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/roku-streaming-earnings-preview-51572986574> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585655293242879822&type=article)
+2019-11-08 00:31:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/roku-streaming-earnings-preview-51572986574>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Most analysts say Roku stock is a buy.',
+ 'title': 'Roku Reports Earnings Today. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/roku-streaming-earnings-preview-51572986574'}
+2019-11-08 00:31:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/uber-stock-earnings-lockup-period-bookings-trips-51572968400> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904585654862558338550&type=article)
+2019-11-08 00:31:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/uber-stock-earnings-lockup-period-bookings-trips-51572968400>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Revenue and earnings beat expectations, but the company missed '
+             'Wall Street’s mark on bookings, monthly active platform '
+             'consumers, and trips.',
+ 'title': 'Uber Stock Hit a Record Low, and More People Are Allowed to Sell '
+          'Today',
+ 'url': 'https://www.barrons.com/articles/uber-stock-earnings-lockup-period-bookings-trips-51572968400'}
+2019-11-08 00:31:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904585654862558338550&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/hp-stock-soars-on-reports-xerox-is-interested-in-buying-it-51573042774> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586000901475792280&type=article)
+2019-11-08 00:31:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/hp-stock-soars-on-reports-xerox-is-interested-in-buying-it-51573042774>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'HP stock is on the rise Wednesday morning after The Wall Street '
+             'Journal reported that Xerox Holdings is considering making a bid '
+             'for the company in a transaction that would unite two old-school '
+             'tech brands.',
+ 'title': 'Xerox Might Be Looking to Buy HP — and HP Stock is Soaring',
+ 'url': 'https://www.barrons.com/articles/hp-stock-soars-on-reports-xerox-is-interested-in-buying-it-51573042774'}
+2019-11-08 00:31:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/xerox-hp-icahn-merger-dinos-of-the-dow-51573056712> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001602811851010&type=article)
+2019-11-08 00:31:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/xerox-hp-icahn-merger-dinos-of-the-dow-51573056712>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The Dinos of the Dow are back in the news because Xerox is '
+             'hunting big game. It’s a reminder that old companies can still '
+             'do new things to create value.',
+ 'title': 'Xerox Is Hunting HP, a Dino of the Dow Six Times Its Size',
+ 'url': 'https://www.barrons.com/articles/xerox-hp-icahn-merger-dinos-of-the-dow-51573056712'}
+2019-11-08 00:31:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/softbank-quarterly-loss-uber-wework-write-downs-51573058334> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001701686745780&type=article)
+2019-11-08 00:31:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/softbank-quarterly-loss-uber-wework-write-downs-51573058334>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Its rough September quarter should be a surprise to absolutely '
+             'no one, given the company’s high-profile entanglement with '
+             'WeWork and, to a lesser extent, Uber.',
+ 'title': 'SoftBank’s Quarterly Loss Was Its Biggest Ever. Blame WeWork and '
+          'Uber.',
+ 'url': 'https://www.barrons.com/articles/softbank-quarterly-loss-uber-wework-write-downs-51573058334'}
+2019-11-08 00:31:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/uber-stock-sinks-as-investors-dump-shares-51573059023> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001672151202108&type=article)
+2019-11-08 00:31:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/uber-stock-sinks-as-investors-dump-shares-51573059023>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Uber Technologies’ lockup period expired Wednesday, which means '
+             'early investors could finally sell their stock. It seems they '
+             'did just that.',
+ 'title': 'Uber Insiders Are Finally Allowed to Sell. They’re Dumping the '
+          'Stock.',
+ 'url': 'https://www.barrons.com/articles/uber-stock-sinks-as-investors-dump-shares-51573059023'}
+2019-11-08 00:31:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/dow-industrials-set-to-crawl-to-another-record-51573042478> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001381315570542&type=article)
+2019-11-08 00:31:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/dow-industrials-set-to-crawl-to-another-record-51573042478>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'U.S. stock futures were pointing to another quiet day after the '
+             '30-point gain for the Dow Jones Industrial Average on Tuesday, '
+             'with attention still focused on the possibility of a U.S.-China '
+             'trade deal.',
+ 'title': 'The Dow Is Crawling to Another Record',
+ 'url': 'https://www.barrons.com/articles/dow-industrials-set-to-crawl-to-another-record-51573042478'}
+2019-11-08 00:31:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/apple-stock-gains-iphone-sales-outlook-upside-51573060349> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586001760270853824&type=article)
+2019-11-08 00:31:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/apple-stock-gains-iphone-sales-outlook-upside-51573060349>
+{'category': 'technology',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The move has lifted the company’s market valuation by $450 '
+             'billion, to $1.114 trillion. Bank of America Merrill Lynch says '
+             'the move can continue.',
+ 'title': 'Apple Stock Is Up 65% This Year. Merrill Lynch Says More Gains '
+          'Could Be Coming.',
+ 'url': 'https://www.barrons.com/articles/apple-stock-gains-iphone-sales-outlook-upside-51573060349'}
+2019-11-08 00:31:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/hedge-fund-billionaire-ray-dalio-the-world-is-mad-the-system-is-broken-51573044810> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001380130398392&type=article)
+2019-11-08 00:31:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/hedge-fund-billionaire-ray-dalio-the-world-is-mad-the-system-is-broken-51573044810>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Ray Dalio—founder of the world’s largest hedge fund—believes '
+             'zero interest rates, low returns, and growing economic '
+             'inequality are setting the world up for something bad. Just what '
+             '“bad” is, however, is still anyone’s guess.',
+ 'title': 'Hedge-Fund Billionaire Ray Dalio Says the World Has Gone Mad and '
+          'the System Is Broken ',
+ 'url': 'https://www.barrons.com/articles/hedge-fund-billionaire-ray-dalio-the-world-is-mad-the-system-is-broken-51573044810'}
+2019-11-08 00:31:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001613804230684&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001602811851010&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001762261374564&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/why-warren-buffett-should-buy-walgreens-51572987194> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000101449813260&type=article)
+2019-11-08 00:31:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/why-warren-buffett-should-buy-walgreens-51572987194>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The Berkshire Hathaway CEO has been searching in vain for a '
+             'large acquisition that could absorb a chunk of Berkshire’s '
+             'growing cash balance. Walgreens Boots Alliance could be it.',
+ 'title': 'Warren Buffett Has Been Searching for a Big Acquisition. He Should '
+          'Buy Walgreens.',
+ 'url': 'https://www.barrons.com/articles/why-warren-buffett-should-buy-walgreens-51572987194'}
+2019-11-08 00:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/humana-stock-managed-care-earnings-meicare-advantage-51573049095> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001552286284990&type=article)
+2019-11-08 00:31:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/humana-stock-managed-care-earnings-meicare-advantage-51573049095>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Shares were up in premarket trading on Wednesday after the '
+             'managed-care company beat earnings expectations and raised '
+             'guidance.',
+ 'title': 'Humana Is the Latest Health-Care Stock to Shine on Strong Earnings',
+ 'url': 'https://www.barrons.com/articles/humana-stock-managed-care-earnings-meicare-advantage-51573049095'}
+2019-11-08 00:31:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/stocks-moving-in-premarket-trading-lowes-hp-xerox-plantronics-and-more-51573044622> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000240362381336&type=article)
+2019-11-08 00:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/stocks-moving-in-premarket-trading-lowes-hp-xerox-plantronics-and-more-51573044622>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'U.S. stock futures are flat Wednesday morning because they can’t '
+             'go up everyday. Still, several stocks, such as Altice, Lowe’s '
+             'and HP, are moving on earnings, deals, and upgrades.',
+ 'title': 'HP Is Soaring, Lowe’s Is Gaining, and the Dow Isn’t Doing Much At '
+          'All',
+ 'url': 'https://www.barrons.com/articles/stocks-moving-in-premarket-trading-lowes-hp-xerox-plantronics-and-more-51573044622'}
+2019-11-08 00:31:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001760270853824&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/cvs-health-stock-revenue-earnings-forecasts-outlook-51573047760> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001492857505186&type=article)
+2019-11-08 00:31:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/cvs-health-stock-revenue-earnings-forecasts-outlook-51573047760>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The company reported quarterly earnings that beat Wall Street '
+             'expectations, and raised its financial forecasts for the fiscal '
+             'year.',
+ 'title': 'CVS Health Stock Rises on Earnings, Upbeat Forecast',
+ 'url': 'https://www.barrons.com/articles/cvs-health-stock-revenue-earnings-forecasts-outlook-51573047760'}
+2019-11-08 00:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904585655351730535286&type=article> (referer: https://www.barrons.com/topics/markets/3?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%223%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001760036606474&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001860724681214&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001900454337650&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002221299573668&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002280613551572&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002131405951212&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001680562428752&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002212624439834&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/wendys-lifts-guidance-after-earning-beat-ahead-of-breakfast-launch-51573052878> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001613804230684&type=article)
+2019-11-08 00:31:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/wendys-lifts-guidance-after-earning-beat-ahead-of-breakfast-launch-51573052878>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Wendy’s stock has climbed in early trading after the fast-food '
+             'chain delivered another earnings beat and raised its guidance.',
+ 'title': 'Wendy’s Stock Is Gaining After Beating Earnings — and It Hasn’t '
+          'Even Launched Its Breakfast Menu Yet',
+ 'url': 'https://www.barrons.com/articles/wendys-lifts-guidance-after-earning-beat-ahead-of-breakfast-launch-51573052878'}
+2019-11-08 00:31:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002243237619476&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003261381708864&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/centurylink-stock-sell-rating-earnings-wireline-51573059395> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001762261374564&type=article)
+2019-11-08 00:31:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/centurylink-stock-sell-rating-earnings-wireline-51573059395>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'CenturyLink stock just got hit with a new Sell rating ahead of '
+             'its third-quarter earnings report.',
+ 'title': 'Sell CenturyLink Stock Because Its Recovery Is Overdone, Analyst '
+          'Says ',
+ 'url': 'https://www.barrons.com/articles/centurylink-stock-sell-rating-earnings-wireline-51573059395'}
+2019-11-08 00:31:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001653632170810&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003320531672658&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000271114122428&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002161650062124&type=article> (referer: https://www.barrons.com/topics/markets/2?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%222%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002324140167178&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/how-to-play-the-2020-election-after-tuesdays-democratic-party-wins-51573060416> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904585655351730535286&type=article)
+2019-11-08 00:31:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/how-to-play-the-2020-election-after-tuesdays-democratic-party-wins-51573060416>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Election Day 2019 has passed, which means it is time for '
+             'investors to look ahead to Election Day 2020. Last night’s '
+             'results have some worrying about a potential Democratic '
+             'surge—and what that might mean for the market.',
+ 'title': 'How to Play the 2020 Election Amid Signs of a Potential Blue Wave',
+ 'url': 'https://www.barrons.com/articles/how-to-play-the-2020-election-after-tuesdays-democratic-party-wins-51573060416'}
+2019-11-08 00:31:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/the-dow-lost-32-points-because-a-trade-deal-might-not-happen-soon-51573062201> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001860724681214&type=article)
+2019-11-08 00:31:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/the-dow-lost-32-points-because-a-trade-deal-might-not-happen-soon-51573062201>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The three major U.S. stock market indexes fell as hopes that the '
+             'U.S. and China would soon sign a partial trade agreement dimmed.',
+ 'title': 'The Dow Lost 32 Points Because a Trade Deal Might Not Happen Soon',
+ 'url': 'https://www.barrons.com/articles/the-dow-lost-32-points-because-a-trade-deal-might-not-happen-soon-51573062201'}
+2019-11-08 00:31:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/chesapeake-energy-stocks-tumbles-on-going-concern-risk-mlps-fall-with-it-51573066703> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001900454337650&type=article)
+2019-11-08 00:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/chesapeake-energy-stocks-tumbles-on-going-concern-risk-mlps-fall-with-it-51573066703>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'Chesapeake stock dropped nearly 30%, and closed near an all-time '
+             'low, one day after the company missed earnings and sales '
+             'forecasts, and listed its “ability to continue as a going '
+             'concern” among the risks facing it going forward.',
+ 'title': 'Chesapeake Stock Tumbled — and That’s Bad News for MLPs',
+ 'url': 'https://www.barrons.com/articles/chesapeake-energy-stocks-tumbles-on-going-concern-risk-mlps-fall-with-it-51573066703'}
+2019-11-08 00:31:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/dow-jones-industrial-average-dipped-ever-so-slightly-on-china-u-s-trade-worries-51573079241> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002221299573668&type=article)
+2019-11-08 00:31:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003471113717038&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/dow-jones-industrial-average-dipped-ever-so-slightly-on-china-u-s-trade-worries-51573079241>
+{'category': 'markets',
+ 'date': 'Nov. 6, 2019',
+ 'subtitle': 'The market had an excuse to fall hard if it wanted when reports '
+             'hit that the U.S. President Donald Trump and Chinese President '
+             'Xi Jinping wouldn’t meet until December to sign phase one of the '
+             'trade deal. The Dow declined just 0.0003%.',
+ 'title': 'The Dow Dropped 0.0003%. Yes, Really.',
+ 'url': 'https://www.barrons.com/articles/dow-jones-industrial-average-dipped-ever-so-slightly-on-china-u-s-trade-worries-51573079241'}
+2019-11-08 00:31:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003500431698590&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:31:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/under-armour-stock-needs-a-celebrity-rescue-51573120802> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001680562428752&type=article)
+2019-11-08 00:31:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/under-armour-stock-needs-a-celebrity-rescue-51573120802>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'CEO Kevin Plank might be exiled like Papa John’s founder John '
+             'Schnatter. The company should follow the lead of Papa John’s, '
+             'whose shares are surging.',
+ 'title': 'Under Armour Stock Needs a Celebrity Rescue. Shaq Is Already Taken.',
+ 'url': 'https://www.barrons.com/articles/under-armour-stock-needs-a-celebrity-rescue-51573120802'}
+2019-11-08 00:31:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/take-two-q3-earnings-preview-51573120893> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002212624439834&type=article)
+2019-11-08 00:31:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/take-two-q3-earnings-preview-51573120893>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Sign up for Barron’s daily mini-podcast.',
+ 'title': 'A 29% Fall For Chesapeake Energy, and Two More Numbers to Know',
+ 'url': 'https://www.barrons.com/articles/take-two-q3-earnings-preview-51573120893'}
+2019-11-08 00:31:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002291279185486&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/the-bubble-is-deflating-for-100-year-bonds-51573122603> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002243237619476&type=article)
+2019-11-08 00:32:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/the-bubble-is-deflating-for-100-year-bonds-51573122603>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'If you were unlucky enough to have bought when the bubble was '
+             'fully inflated late last summer, however, you may be suffering '
+             'in relative silence.',
+ 'title': 'The Bubble Is Deflating for 100-Year Bonds',
+ 'url': 'https://www.barrons.com/articles/the-bubble-is-deflating-for-100-year-bonds-51573122603'}
+2019-11-08 00:32:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/european-stocks-climb-for-fifth-session-on-trade-optimism-51573123619> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003261381708864&type=article)
+2019-11-08 00:32:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/european-stocks-climb-for-fifth-session-on-trade-optimism-51573123619>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'European stocks rose on Thursday for a fifth straight session, '
+             'getting a boost from a report about the U.S. and China agreeing '
+             'on how they would remove tariffs.',
+ 'title': 'European Stocks Climb For Fifth Session on Trade Optimism',
+ 'url': 'https://www.barrons.com/articles/european-stocks-climb-for-fifth-session-on-trade-optimism-51573123619'}
+2019-11-08 00:32:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003611289185854&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:02 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 76 pages/min), scraped 59 items (at 35 items/min)
+2019-11-08 00:32:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/dividend-stocks-are-hot-again-they-could-get-even-hotter-51573124401> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586001653632170810&type=article)
+2019-11-08 00:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/dividend-stocks-are-hot-again-they-could-get-even-hotter-51573124401>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'On Monday, when AT&T stock was up a penny—even as the broad '
+             'market rallied—investors made some bold moves that are rarely '
+             'associated with a stock that pays hefty dividends.',
+ 'title': 'Dividend Stocks Are Hot Again. Some Options Investors Are Betting '
+          'They’ll Go Higher.',
+ 'url': 'https://www.barrons.com/articles/dividend-stocks-are-hot-again-they-could-get-even-hotter-51573124401'}
+2019-11-08 00:32:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/aston-martin-swings-to-loss-ahead-of-make-or-break-suv-launch-51573126049> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003320531672658&type=article)
+2019-11-08 00:32:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/aston-martin-swings-to-loss-ahead-of-make-or-break-suv-launch-51573126049>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Aston Martin swung to a loss in the third quarter amid tough '
+             'trading conditions in the U.K. and Europe as wholesale volumes '
+             'and sales dropped.',
+ 'title': 'Aston Martin Swings to Loss Ahead of Make Or Break SUV Launch',
+ 'url': 'https://www.barrons.com/articles/aston-martin-swings-to-loss-ahead-of-make-or-break-suv-launch-51573126049'}
+2019-11-08 00:32:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/the-sec-may-open-the-gate-to-private-equity-for-the-masses-bad-idea-51573126200> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586000271114122428&type=article)
+2019-11-08 00:32:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/the-sec-may-open-the-gate-to-private-equity-for-the-masses-bad-idea-51573126200>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'The SEC may lift restrictions on regular investors. Why that '
+             'would benefit no one.',
+ 'title': 'Jim Grant: Why Private Equity Isn’t for You',
+ 'url': 'https://www.barrons.com/articles/the-sec-may-open-the-gate-to-private-equity-for-the-masses-bad-idea-51573126200'}
+2019-11-08 00:32:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/ethanol-is-looking-better-investors-still-need-to-tread-carefully-51573128001> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002161650062124&type=article)
+2019-11-08 00:32:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/ethanol-is-looking-better-investors-still-need-to-tread-carefully-51573128001>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Ethanol maker Green Plains reported earnings late Tuesday and '
+             'the stock closed up 11.6% to $14.65 a share on Wednesday. Things '
+             'are looking up for the confusing, embattled commodity.',
+ 'title': 'Ethanol Is Looking Better. Investors Still Need to Tread Carefully.',
+ 'url': 'https://www.barrons.com/articles/ethanol-is-looking-better-investors-still-need-to-tread-carefully-51573128001'}
+2019-11-08 00:32:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002170472164678&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/stocks-moving-premarket-roku-expedia-qualcomm-fiserv-51573130572> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002324140167178&type=article)
+2019-11-08 00:32:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/stocks-moving-premarket-roku-expedia-qualcomm-fiserv-51573130572>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'U.S. stock futures are up because the U.S. and China are making '
+             'progress on trade. That’s not enough for Roku or Expedia shares, '
+             'which are dropping in premarket trading. Shares of Qualcomm and '
+             'Fiserv, on the other hand, are moving higher.',
+ 'title': 'Roku Drops, Chesapeake Bounces (a Little), and Dow  Futures Advance '
+          'on Trade News',
+ 'url': 'https://www.barrons.com/articles/stocks-moving-premarket-roku-expedia-qualcomm-fiserv-51573130572'}
+2019-11-08 00:32:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003700656486310&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003801960711180&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB52435233077418933703004585647090769552902&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/worlds-largest-wind-turbine-maker-vestas-climbs-on-record-orders-51573132569> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003471113717038&type=article)
+2019-11-08 00:32:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/worlds-largest-wind-turbine-maker-vestas-climbs-on-record-orders-51573132569>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Vestas Wind Systems’s stock surged on Thursday as the world’s '
+             'biggest wind turbine manufacturer reported record orders and a '
+             '30% sales jump.',
+ 'title': 'World’s Largest Wind Turbine Maker Vestas Surges on Record Orders',
+ 'url': 'https://www.barrons.com/articles/worlds-largest-wind-turbine-maker-vestas-climbs-on-record-orders-51573132569'}
+2019-11-08 00:32:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/tevas-earnings-results-sales-revenue-consensus-51573133051> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003500431698590&type=article)
+2019-11-08 00:32:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/tevas-earnings-results-sales-revenue-consensus-51573133051>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Revenues were slightly higher than Wall Street had anticipated.',
+ 'title': 'Teva’s Earnings Met Expectations, and the Stock Is on the Move',
+ 'url': 'https://www.barrons.com/articles/tevas-earnings-results-sales-revenue-consensus-51573133051'}
+2019-11-08 00:32:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003663210109484&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003882592204462&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003910727740164&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/expedia-stock-earnings-guidance-lodging-air-travel-revenue-51573080919> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002291279185486&type=article)
+2019-11-08 00:32:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/expedia-stock-earnings-guidance-lodging-air-travel-revenue-51573080919>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Lodging revenue was up 11%, but air-travel revenue was down 3%, '
+             'driven by a 10% drop in revenue per ticket.',
+ 'title': 'Expedia Stock Is Sliding After Earnings Miss Estimates and '
+          'Full-Year Guidance Is Cut',
+ 'url': 'https://www.barrons.com/articles/expedia-stock-earnings-guidance-lodging-air-travel-revenue-51573080919'}
+2019-11-08 00:32:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003652188772500&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/markets?id=SB51073444157828484906904586004230063055522&type=article> (referer: https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search)
+2019-11-08 00:32:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/industrial-stock-earnings-gates-consumer-economy-contraction-51573141408> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003611289185854&type=article)
+2019-11-08 00:32:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/industrial-stock-earnings-gates-consumer-economy-contraction-51573141408>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Few investors are likely aware of Gates Industrial, but it '
+             'offered some fresh hope this week for the U.S. industrial '
+             'economy.',
+ 'title': 'An Obscure Industrial Stock Earnings Report Could Offer Hope for '
+          'the U.S. Economy',
+ 'url': 'https://www.barrons.com/articles/industrial-stock-earnings-gates-consumer-economy-contraction-51573141408'}
+2019-11-08 00:32:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003853977511600&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:32:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003901398906580&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:32:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003713905542414&type=article> (referer: https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search)
+2019-11-08 00:32:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/square-stock-earnings-beat-card-reader-payments-51573076389> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586002170472164678&type=article)
+2019-11-08 00:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/square-stock-earnings-beat-card-reader-payments-51573076389>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'The company reported earnings of 25 cents a share, $1.27 billion '
+             'in revenue and $28.2 billion in gross payments volume.',
+ 'title': 'Square Stock Gets a Lift After Earnings Beat Expectations ',
+ 'url': 'https://www.barrons.com/articles/square-stock-earnings-beat-card-reader-payments-51573076389'}
+2019-11-08 00:32:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/self-driving-cars-seem-far-away-but-garmin-just-introduced-self-landing-plane-tech-51573145048> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003700656486310&type=article)
+2019-11-08 00:32:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/self-driving-cars-seem-far-away-but-garmin-just-introduced-self-landing-plane-tech-51573145048>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Alex Eule and Jeffrey Cane discuss why Garmin is flying under '
+             'the radar.',
+ 'title': 'Why Is Garmin’s New Self-Landing Plane Tech Not a Bigger Deal?',
+ 'url': 'https://www.barrons.com/articles/self-driving-cars-seem-far-away-but-garmin-just-introduced-self-landing-plane-tech-51573145048'}
+2019-11-08 00:32:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/walt-disney-earnings-soon-heres-what-to-expect-51572638905> (referer: https://www.barrons.com/topics/markets?id=SB52435233077418933703004585647090769552902&type=article)
+2019-11-08 00:32:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/walt-disney-earnings-soon-heres-what-to-expect-51572638905>
+{'category': 'markets',
+ 'date': 'November 7, 2019',
+ 'subtitle': 'Walt Disney is a bigger and more complex company than it was a '
+             'year ago, giving both management and investors more to consider.',
+ 'title': 'Disney Reports Earnings Today. Here’s What to Expect.',
+ 'url': 'https://www.barrons.com/articles/walt-disney-earnings-soon-heres-what-to-expect-51572638905'}
+2019-11-08 00:32:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/u-s-china-agree-to-lift-some-tariffs-if-trade-deal-is-struck-heres-why-some-are-skeptical-51573150029> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003663210109484&type=article)
+2019-11-08 00:32:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/stocks-moving-at-midday-ralph-lauren-expedia-tripadvisor-51573151487> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003882592204462&type=article)
+2019-11-08 00:32:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/u-s-china-agree-to-lift-some-tariffs-if-trade-deal-is-struck-heres-why-some-are-skeptical-51573150029>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'The U.S. and China have agreed to suspend some of the existing '
+             'tariffs on each other’s goods in phases if an initial trade deal '
+             'is reached. But a deal remains a big if.',
+ 'title': 'U.S., China Agree to Lift Some Tariffs if Trade Deal Is Struck. '
+          'Here’s Why Some Are Skeptical.',
+ 'url': 'https://www.barrons.com/articles/u-s-china-agree-to-lift-some-tariffs-if-trade-deal-is-struck-heres-why-some-are-skeptical-51573150029'}
+2019-11-08 00:32:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/stocks-moving-at-midday-ralph-lauren-expedia-tripadvisor-51573151487>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'All three major U.S. stock indexes were at record levels as '
+             'upbeat news about employment and comments from Beijing '
+             'encouraged investors.',
+ 'title': 'Stocks Are Hitting Records on Fresh Hope for Lower Tariffs',
+ 'url': 'https://www.barrons.com/articles/stocks-moving-at-midday-ralph-lauren-expedia-tripadvisor-51573151487'}
+2019-11-08 00:32:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/tevas-ceo-schultz-opioid-deal-stock-drugs-51573153474> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003910727740164&type=article)
+2019-11-08 00:32:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/tevas-ceo-schultz-opioid-deal-stock-drugs-51573153474>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Stock in the drug company soared 10% after the company reported '
+             'solid earnings,',
+ 'title': 'Teva’s CEO Says Opioid Deal Could Be Done By End of the Year',
+ 'url': 'https://www.barrons.com/articles/tevas-ceo-schultz-opioid-deal-stock-drugs-51573153474'}
+2019-11-08 00:32:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/chesapeake-energy-stock-selloff-going-concern-accountants-debt-51573146214> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586003652188772500&type=article)
+2019-11-08 00:32:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/chesapeake-energy-stock-selloff-going-concern-accountants-debt-51573146214>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'But investors familiar with the company know most of the pain '
+             'was felt long ago.',
+ 'title': 'Chesapeake Energy Stock Got Crushed After Raising ‘Going Concern’ '
+          'Risks. Here’s What That Means.',
+ 'url': 'https://www.barrons.com/articles/chesapeake-energy-stock-selloff-going-concern-accountants-debt-51573146214'}
+2019-11-08 00:32:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/dow-jones-industrial-average-rose-because-tariffs-may-end-51573165175> (referer: https://www.barrons.com/topics/markets?id=SB51073444157828484906904586004230063055522&type=article)
+2019-11-08 00:32:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/dow-jones-industrial-average-rose-because-tariffs-may-end-51573165175>
+{'category': 'markets',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'All three major U.S. stock indexes rose as investors welcomed '
+             'news about corporate earnings, trade, and employment.',
+ 'title': 'The Dow Rose 182 Points Because U.S.-China Tariffs Might Be Rolled '
+          'Back',
+ 'url': 'https://www.barrons.com/articles/dow-jones-industrial-average-rose-because-tariffs-may-end-51573165175'}
+2019-11-08 00:32:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/netflix-stock-wins-support-from-a-short-seller-citron-research-51573149672> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003853977511600&type=article)
+2019-11-08 00:32:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/netflix-stock-wins-support-from-a-short-seller-citron-research-51573149672>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'The firm says the stock could rise to $350. It is currently '
+             'below $300.',
+ 'title': 'Short-Seller Citron Research Turns Bullish on Netflix',
+ 'url': 'https://www.barrons.com/articles/netflix-stock-wins-support-from-a-short-seller-citron-research-51573149672'}
+2019-11-08 00:32:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/xerox-says-printer-industry-consolidation-long-overdue-51573149777> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003901398906580&type=article)
+2019-11-08 00:32:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/xerox-says-printer-industry-consolidation-long-overdue-51573149777>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': '“Our industry is long overdue for consolidation, and those who '
+             'move first will have a distinct advantage,” said Xerox, which '
+             'has made a bid to buy rival HP.',
+ 'title': 'Xerox Says Printer Industry Consolidation ‘Long Overdue’',
+ 'url': 'https://www.barrons.com/articles/xerox-says-printer-industry-consolidation-long-overdue-51573149777'}
+2019-11-08 00:32:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barrons.com/articles/twitter-stock-research-development-tech-51573145475> (referer: https://www.barrons.com/topics/technology?id=SB51073444157828484906904586003713905542414&type=article)
+2019-11-08 00:32:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.barrons.com/articles/twitter-stock-research-development-tech-51573145475>
+{'category': 'technology',
+ 'date': 'Nov. 7, 2019',
+ 'subtitle': 'Tech companies like Twitter and Facebook need to spend enough on '
+             'research and development to keep the growth engine running, '
+             'Evercore says.',
+ 'title': 'Sell Twitter Stock Because a ‘Tech Debt’ Is Hurting the Outlook ',
+ 'url': 'https://www.barrons.com/articles/twitter-stock-research-development-tech-51573145475'}
+2019-11-08 00:32:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-11-08 00:32:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 101196,
+ 'downloader/request_count': 173,
+ 'downloader/request_method_count/GET': 173,
+ 'downloader/response_bytes': 3929385,
+ 'downloader/response_count': 173,
+ 'downloader/response_status_count/200': 173,
+ 'dupefilter/filtered': 11,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 11, 8, 0, 32, 26, 438916),
+ 'item_scraped_count': 79,
+ 'log_count/DEBUG': 253,
+ 'log_count/INFO': 11,
+ 'memusage/max': 114696192,
+ 'memusage/startup': 93900800,
+ 'request_depth_max': 2,
+ 'response_received_count': 173,
+ 'scheduler/dequeued': 173,
+ 'scheduler/dequeued/memory': 173,
+ 'scheduler/enqueued': 173,
+ 'scheduler/enqueued/memory': 173,
+ 'start_time': datetime.datetime(2019, 11, 8, 0, 30, 2, 496876)}
+2019-11-08 00:32:26 [scrapy.core.engine] INFO: Spider closed (finished)
