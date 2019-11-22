@@ -13,8 +13,8 @@ class BarronlistSpider(scrapy.Spider):
         'HTTPCACHE_ENABLED': False
             }
     allowed_domains = ['www.barrons.com']
-    urls = ['https://www.barrons.com/topics/technology/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search'.format(i,i) for i in range(2,50)]
-    links = ['https://www.barrons.com/topics/markets/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search'.format(i,i) for i in range(2,50)]
+    urls = ['https://www.barrons.com/topics/technology/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search'.format(i,i) for i in range(2,4)]
+    links = ['https://www.barrons.com/topics/markets/{}?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A%22{}%22%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search'.format(i,i) for i in range(2,4)]
     start_urls = ['https://www.barrons.com/topics/technology?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22technology%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARINDTECH%22%7D&type=topics_search','https://www.barrons.com/topics/markets/?id=%7B%22db%22%3A%22barrons%2Cbarronsblog%22%2C%22query%22%3A%22markets%22%2C%22queryType%22%3A%22type%22%2C%22page%22%3A1%2C%22count%22%3A15%2C%22subjectValue%22%3A%22BARMKTS%22%7D&type=topics_search'] + links + urls
     def parse(self, response):
         jsonresponse = json.loads(response.body_as_unicode())
