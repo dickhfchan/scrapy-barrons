@@ -3,7 +3,7 @@ from cassandra.cluster import Cluster
 import sys
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
-server = ['13.229.248.211']
+server = ['52.82.14.223']
 cluster = Cluster(server)
 session = cluster.connect('scrapy')
 date = pd.read_csv('/home/ubuntu/scrapy-barrons/barron/barron/output.csv',sep = '~')
